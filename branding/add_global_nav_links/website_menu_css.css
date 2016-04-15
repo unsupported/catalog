@@ -1,0 +1,68 @@
+/* Working Code as of 4/14/2016 */
+
+/* This helps you change the color of the header bar incase you want white links
+#app-header {
+    padding:4px 0 5px;
+    background-color:#414042;
+}
+*/
+#app-header h1 {
+    margin:10px 0;
+}
+
+/* user-nav includes changes to the Login / User information link */
+#user-nav {
+    padding-top:25px;
+}
+#user-nav > a {
+    display:inline-block;
+    margin-bottom:0;
+    font-weight:normal;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid transparent;
+    white-space:nowrap;
+    padding:5px 10px;
+    font-size:14px;
+    line-height:1.428571429;
+    border-radius:4px;
+    -webkit-user-select:none;
+    color:#4d4d4d;
+}
+
+#user-nav > a:hover {
+    text-decoration:none;
+    color:#e63d2f;
+}
+/* Active Color of Login button once logged in */
+
+.header-nav li a {
+    color:#4d4d4d;
+}
+
+/* Page Links refers to the custom links */
+#page-links {
+    display:inline-block;
+}
+#page-links a {
+    display:inline-block;
+    padding:5px 10px;
+    font-size:14px;
+    color:#4d4d4d;
+}
+#page-links a:hover,
+.btn-link:hover,
+.btn-link {
+    color:#e63d2f;
+}
+
+#page-links .piped-list>li:after {
+    content:"|";
+    color:#4d4d4d;
+}
+#page-links .piped-list>li:before {
+    display:none;
+    margin-right:0;
+}
