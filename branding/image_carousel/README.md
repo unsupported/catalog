@@ -23,3 +23,9 @@ You also need to add an additional indicator. Change the `data-slide-to` attribu
 ```
 
 It is also important to note that new lines in Javascript need to be terminated with a `\`. If you add additional lines to the carousel variable you will need to terminate the new lines.
+
+# Before Screenshot
+![Alt text](./before_image_carousel.png?raw=true "Before Image Carousel")
+
+# After Screenshot
+![Alt text](./after_image_carousel.png?raw=true "After Image Carousel")
