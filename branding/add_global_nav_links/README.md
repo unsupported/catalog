@@ -7,3 +7,6 @@ You will want to edit the links to redirect the links from `https://google.com` 
 These links will open in a new tab, if you would like them to open in the current tab. Remove `'_blank'` from each `<a>` tag.
 
 You will need to add both the JS & CSS file to your Catalog customizations to make the tweaks work.
+
+# Custom Link Screenshot
+![Alt text](./custom_links.png?raw=true "Custom Links")

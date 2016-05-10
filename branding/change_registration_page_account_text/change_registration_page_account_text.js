@@ -3,11 +3,11 @@
 //Note: this can be customized to change more text depending on what you want to replace within Canvas.
 //The current example replaces the "Already have account?" text on the listing enrollment page, while keeping the "Sign In" link.
 
-var findText1 = 'Already have an account?';
-var replaceText1 = 'Bat Signal!';
+var find_text = 'Already have an account?';
+var replace_text = 'Bat Signal!';
 
-var urlPath1 = /^\/courses\/\d+\/enrollment\/new\/*/i;
-if(location.pathname.match(urlPath1)){
-  var foundEle = $("p.text-center:contains('"+findText1+"')");
-  foundEle.html(foundEle.html().replace(findText1, replaceText1));
+var url_path = /^\/courses\/\d+\/enrollment\/new\/*/i;
+if(location.pathname.match(url_path)){
+  var element = $("p.text-center:contains('"+find_text+"')");
+  element.html(element.html().replace(find_text, replace_text));
 }
