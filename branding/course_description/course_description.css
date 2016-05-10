@@ -1,0 +1,234 @@
+/*Working as of 05/09/2016*/
+/* New listing layout */
+.new-layout p {
+	line-height: 1.25;
+}
+
+.new-layout .course-information a {
+	color: rgb(229,62,48);
+}
+
+.read-more {
+	font-family: 'proxima nova bold', arial, sans-serif;
+	cursor: pointer;
+}
+
+.more-text{
+	display: none;
+}
+
+.new-layout .jqFlag { display: none; }
+
+.new-layout .hero-head.h1 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.new-layout .hero-region p {
+	font-family: "proxima nova thin", arial, sans-serif;
+	font-size: 19px;
+}
+
+.new-layout .product-bg {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.new-layout .product-image .btn.btn-info.btn-lg {
+	background-color: rgba(255,255,255,.30);
+	border-radius: 0;
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 25px;
+	border: 1px solid rgb(255,255,255);
+	line-height: 50px;
+	padding: 0;
+	height: 50px;
+	width: 200px;
+}
+
+.new-layout .product-image input.btn.btn-info.btn-lg {
+	font-size: 18px;
+}
+
+.new-layout.dk .product-image .btn.btn-info.btn-lg {
+	color: rgb(88,89,91);
+	background-color: rgba(255,255,255,.60);
+}
+
+a.btn.btn-info.btn-lg.btn-action {
+  color: rgb(255,255,255);
+}
+
+.ProductEnrollment__Notice {
+	font-size: 14px;
+	color: rgb(70,70,70);
+}
+
+#product-page footer .h2 { font-style: normal; }
+
+.new-layout footer.callout-region .btn.btn-info.btn-lg.btn-action {
+	background: transparent;
+	border-radius: 0;
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 19px;
+	border: 1px solid;
+	line-height: 40px;
+	padding: 0;
+	height: 40px;
+	width: 145px;
+}
+
+.new-layout .product-image .btn.btn-info.btn-lg {
+	position: absolute;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.new-layout footer.callout-region {
+	background-color: rgb(109,110,113);
+	color: rgb(0,0,0);
+	padding: 50px 0;
+}
+
+.new-layout footer.callout-region h3 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.new-layout .main-column h3,
+.new-layout .side-column h3 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 21px;
+	text-transform: uppercase;
+	color: rgb(70,70,70);
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 21px;
+}
+
+.new-layout .instructor {
+	height: 120px;
+	width: 120px;
+}
+
+.new-layout .instructor-info {
+	border-bottom: solid 1px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+.new-layout .instructor-container > div:first-of-type {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.new-layout .instructor-name { align-self: flex-end; }
+
+.new-layout .instructor-name h4 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: rgb(70,70,70);
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+.new-layout .instructor-name p {
+	font-family: "proxima nova light", arial, sans-serif;
+	font-size: 12px;
+	text-transform: none;
+	display: block;
+	margin: 0;
+	margin-left: 15px;
+}
+
+.new-layout img.product-account-logo {
+	max-height: 90px;
+}
+
+.new-layout .detail-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: 35px;
+}
+
+.new-layout .detail-blocks div {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 35px 10px 0;
+	height: 95px;
+	width: 130px;
+	text-align: center;
+	background-color: rgb(230,231,232);
+	background-image: url(http://pub-images.canvasnetwork.com/background_course-details.gif);
+	background-repeat: no-repeat;
+	background-position: -35px 0;
+}
+
+.new-layout .detail-blocks div.detail-duration { background-position: -235px 0; }
+.new-layout .detail-blocks div.detail-commitment { background-position: -440px 0; }
+.new-layout .detail-blocks div.detail-requirement { background-position: -35px -105px; }
+.new-layout .detail-blocks div.detail-type { background-position: -235px -105px; }
+.new-layout .detail-blocks div.detail-credential { background-position: -440px -105px; }
+
+.new-layout .detail-blocks h5 {
+	font-family: "proxima nova bold", arial, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0;
+	color: rgb(70,70,70);
+}
+
+.new-layout .detail-blocks p {
+	font-family: "proxima nova light", arial, sans-serif;
+	font-size: 14px;
+}
+
+.new-layout .product-account-logo {
+        display: block;
+        margin: 16px auto;
+}
+
+.new-layout .additional-logos img {
+       max-width: 150px;
+}
+
+@media screen and (max-width: 991px) {
+	.new-layout .product-bg {
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+
+	.new-layout .detail-blocks {
+		max-width: 420px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.new-layout .instructor-info > div:first-child { justify-content: flex-start; }
+	.new-layout .instructor { margin-right: 20px; }
+}
+
+@media screen and (max-width: 614px) {
+	.new-layout .detail-blocks {
+		width: 340px;
+		margin: auto;
+	}
+
+	.new-layout .detail-blocks div {
+		width: 140px;
+		background-position: -30px 0;
+	}
+
+	.new-layout .detail-blocks div.detail-duration { background-position: -230px 0; }
+	.new-layout .detail-blocks div.detail-commitment { background-position: -435px 0; }
+	.new-layout .detail-blocks div.detail-requirement { background-position: -30px -105px; }
+	.new-layout .detail-blocks div.detail-type { background-position: -230px -105px; }
+	.new-layout .detail-blocks div.detail-credential { background-position: -435px -105px; }
+}
