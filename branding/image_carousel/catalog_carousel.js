@@ -1,3 +1,5 @@
+// Carousel JS Working as of 05/12/2016
+if(location.pathname == '/'){
 var carousel = '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> \
   <!-- Indicators --> \
   <ol class="carousel-indicators"> \
@@ -59,3 +61,4 @@ var carousel = '<div id="carousel-example-generic" class="carousel slide" data-r
 </div> <!-- Carousel -->';
 
 $('#feature').html(carousel);
+}
