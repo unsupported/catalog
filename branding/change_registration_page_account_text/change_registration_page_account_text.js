@@ -6,7 +6,7 @@
 var find_text = 'Already have an account?';
 var replace_text = 'Bat Signal!';
 
-var url_path = /^\/courses\/\d+\/enrollment\/new\/*/i;
+var url_path = /^\/(courses|programs)\/\d+\/enrollment\/new\/*/i;
 if(location.pathname.match(url_path)){
   var element = $("p.text-center:contains('"+find_text+"')");
   element.html(element.html().replace(find_text, replace_text));
