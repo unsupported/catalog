@@ -1,0 +1,7 @@
+#search-form .search-label, #search-form .search-box-wrapper {
+    width: 350px;
+    visibility: visible;
+}
+#search-refine-button--refine{
+    display: inherit;
+}
