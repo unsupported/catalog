@@ -1,0 +1,14 @@
+/*Working as of November 2, 2018*/
+
+#search-form .search-label,
+#search-form .search-box-wrapper {
+    visibility: hidden;
+}
+
+#search-refine-button--refine {
+    display: none;
+}
+
+::placeholder {
+    color: #9f9f9f !important;
+}
