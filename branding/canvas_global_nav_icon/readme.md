@@ -3,7 +3,13 @@ Other than changing the Dashboard Icon in Canvas to redirect to the Catalog Dash
 
 # Installation
 ## Add LTI Tool
-1) Open catalog_lti.xml in a text editor and update all occurrence of https://demo.catalog.instructure.com URL to the client's root catalog url
+1) Open catalog_lti.xml in a text editor and update the following line of https://demo.catalog.instructure.com URL to the desired root catalog url and target location
+
+```
+<lticm:property name="url">https://demo.catalog.instructure.com/login?target_uri=/</lticm:property>
+```
+*Note: Remove "/login?target_uri=/" if you want to redirect without attempting/forcing the user to login to Catalog.
+
 2) Add the LTI to Canvas Root Account by using the Add by pasting XML method and using the updated and edited catalog_lti.xml
 3) Navigate to <canvas-domain>/api/v1/accounts/self/external_tools?per_page=100 and find the LTI tool ID of the newly added LTI tool. You'll need this id when updating the custom javascript.
   
@@ -14,12 +20,16 @@ Default: Teachers and Admins
 
 Altered: All Authenticated Canvas Users
 <lticm:property name="visibility">members</lticm:property> 
+
+Altered: All Users
+<lticm:property name="visibility">public</lticm:property> 
+
 ```
 
 ## Customize Javascript
 Customize this line with the necessary information:
 ```
-fixCatalogURL("<catalog_url>", "<catalog_tool_id>", "<root_account_id>");
+fixCatalogURL("<catalog_url>/login?target_uri=/", "<catalog_tool_id>", "<root_account_id>");
 ``` 
-
+*Note: Remove "/login?target_uri=/" if you want to redirect without attempting/forcing the user to login to Catalog. 
 
