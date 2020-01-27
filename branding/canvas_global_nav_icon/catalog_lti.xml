@@ -1,31 +1,30 @@
 <cartridge_basiclti_link xmlns="http://www.imsglobal.org/xsd/imslticc_v1p0" xmlns:blti="http://www.imsglobal.org/xsd/imsbasiclti_v1p0" xmlns:lticm="http://www.imsglobal.org/xsd/imslticm_v1p0" xmlns:lticp="http://www.imsglobal.org/xsd/imslticp_v1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imslticc_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticc_v1p0.xsd http://www.imsglobal.org/xsd/imsbasiclti_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imsbasiclti_v1p0p1.xsd http://www.imsglobal.org/xsd/imslticm_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticm_v1p0.xsd http://www.imsglobal.org/xsd/imslticp_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticp_v1p0.xsd">
-    <blti:title>PD Catalog</blti:title>
+    <blti:title>Catalog Global Nav Launch</blti:title>
     <blti:description>
-    Add links to external web resources that show up as navigation items in course, user or account navigation. Whatever URL you specify is loaded within the content pane when users click the link.
+        Add links to external web resources that show up as navigation items in course, user or account navigation. Whatever URL you specify is loaded within the content pane when users click the link.
     </blti:description>
-    <blti:launch_url>https://demo.catalog.instructure.com</blti:launch_url>
+    <blti:launch_url>https://www.edu-apps.org/redirect</blti:launch_url>
+    <blti:icon>
+        https://www.edu-apps.org/assets/lti_redirect_engine/redirect_icon.png
+    </blti:icon>
     <blti:custom>
         <lticm:property name="new_tab">1</lticm:property>
-        <lticm:property name="url">https://demo.catalog.instructure.com</lticm:property>
+        <lticm:property name="url">https://demo.catalog.instructure.com/login?target_uri=/</lticm:property>
     </blti:custom>
     <blti:extensions platform="canvas.instructure.com">
+        <lticm:options name="global_navigation">
+            <lticm:property name="icon_svg_path_64">
+                M23.5,58.83H5.5a4.48,4.48,0,0,1-4.4-4.54V5.53A4.47,4.47,0,0,1,5.5,1H51.32a4.48,4.48,0,0,1,4.4,4.54V24h-4.4V5.53L5.5,5.39v48.9l18,.14v4.4ZM11.84,11.68H42.79v4.4H11.84v-4.4Zm0,10.69H36.79v4.4H11.84Zm0,10.69H28.59v4.4H11.84Zm0,10.69H28.59v4.4H11.84ZM62.76,56.52,56.1,44.11a12.57,12.57,0,1,0-22.94,0L26.39,56.37A1.14,1.14,0,0,0,27.64,58l5.74-1.3,1.94,5.48a1.15,1.15,0,0,0,1,.76h.09a1.14,1.14,0,0,0,1-.6l5.92-10.93a11.63,11.63,0,0,0,1.25.13c.39,0,.76-.08,1.15-.11l6,11a1.12,1.12,0,0,0,1,.6h.09a1.15,1.15,0,0,0,1-.74l2-5.46,5.73,1.33a1.15,1.15,0,0,0,1.28-1.65ZM36.35,55l-.71-2a.56.56,0,0,0-.67-.37l-2.13.48,3-5.42A12.24,12.24,0,0,0,39.12,50Zm8.23-8a8,8,0,1,1,8.05-8A8,8,0,0,1,44.58,47Zm9.84,6.5a.68.68,0,0,0-.79.43l-.85,2.38-3.23-5.95a14.76,14.76,0,0,0,3.85-2.7l3.54,6.41Z" transform="translate(-1.1 -1)
+            </lticm:property>
+            <lticm:property name="text">Catalog</lticm:property>
+            <lticm:property name="label">Catalog</lticm:property>
+            <lticm:property name="visibility">admins</lticm:property>
+        </lticm:options>
         <lticm:property name="icon_url">
             https://www.edu-apps.org/assets/lti_redirect_engine/redirect_icon.png
         </lticm:property>
         <lticm:property name="link_text"/>
         <lticm:property name="privacy_level">anonymous</lticm:property>
         <lticm:property name="tool_id">redirect</lticm:property>
-        <lticm:options name="global_navigation">
-            <lticm:property name="display_type">full_width</lticm:property>
-            <lticm:property name="icon_svg_path_64">
-                M23.5,58.83H5.5a4.48,4.48,0,0,1-4.4-4.54V5.53A4.47,4.47,0,0,1,5.5,1H51.32a4.48,4.48,0,0,1,4.4,4.54V24h-4.4V5.53L5.5,5.39v48.9l18,.14v4.4ZM11.84,11.68H42.79v4.4H11.84v-4.4Zm0,10.69H36.79v4.4H11.84Zm0,10.69H28.59v4.4H11.84Zm0,10.69H28.59v4.4H11.84ZM62.76,56.52,56.1,44.11a12.57,12.57,0,1,0-22.94,0L26.39,56.37A1.14,1.14,0,0,0,27.64,58l5.74-1.3,1.94,5.48a1.15,1.15,0,0,0,1,.76h.09a1.14,1.14,0,0,0,1-.6l5.92-10.93a11.63,11.63,0,0,0,1.25.13c.39,0,.76-.08,1.15-.11l6,11a1.12,1.12,0,0,0,1,.6h.09a1.15,1.15,0,0,0,1-.74l2-5.46,5.73,1.33a1.15,1.15,0,0,0,1.28-1.65ZM36.35,55l-.71-2a.56.56,0,0,0-.67-.37l-2.13.48,3-5.42A12.24,12.24,0,0,0,39.12,50Zm8.23-8a8,8,0,1,1,8.05-8A8,8,0,0,1,44.58,47Zm9.84,6.5a.68.68,0,0,0-.79.43l-.85,2.38-3.23-5.95a14.76,14.76,0,0,0,3.85-2.7l3.54,6.41Z" transform="translate(-1.1 -1)
-            </lticm:property>
-            <lticm:property name="text">Catalog</lticm:property>
-            <lticm:property name="label">Catalog</lticm:property>
-            <lticm:property name="url">
-                https://demo.catalog.instructure.com
-            </lticm:property>
-            <lticm:property name="visibility">admins</lticm:property>
-        </lticm:options>
     </blti:extensions>
 </cartridge_basiclti_link>
